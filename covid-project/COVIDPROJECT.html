@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Covid Chaser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="form-box">
+      <h1>Welcome to Covid Chaser! </h1>
+      <h1>Register here</h1>
+        <div class="input-box">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="Put your username here">
+        </div>
+
+        <div class="input-box">
+          <i class="fa fa-key"></i>
+          <input type="password" placeholder="Put your password here" id="myInput">
+          <span class="eye" onClick="myFunction()">
+          <i id="hide1" class="fa fa-eye" aria-hidden="true"></i>
+          <i id="hide2" class="fa fa-eye-slash" aria-hidden="true"></i>
+          </span>
+      </div>
+      <a href="COVIDPROJECT2.html"<button type="button" class="login-btn">Submit</button></a>
+    </div>
+
+      <script>
+        function myFunction(){
+
+          var x = document.getElementById("myInput");
+          var y = document.getElementById("hide1");
+          var z = document.getElementById("hide2");
+
+          if(x.type === 'password'){
+
+            x.type = "text";
+            y.type.display = block;
+            z.style.display = "none"
+          }
+          else {
+            x.type = "password";
+            y.type.display = none;
+            z.style.display = "block"
+
+
+          }
+        }
+      </script>
+  </body>
+</html>

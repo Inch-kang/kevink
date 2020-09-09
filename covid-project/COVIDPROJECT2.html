@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Covid Chaser</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </script>
+    </head>
+    <body>
+    <div class="form-box">
+      <h1>Please fill out the form below</h1>
+        <div class="input-box">
+          <i class="fa fa-user"></i>
+          <label>Your first name</label>
+            <input type="text" name="" required= "">
+
+          <i class="fa fa-user"></i>
+          <label>Your last name</label>
+            <input type="text" name="" required= "">
+
+          <i class="fa fa-address-book-o"></i>
+          <label>Your address</label>
+            <input type="text"  id= "addyfinder">
+
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <label>Your phone number</label>
+            <input type="text" name="" required= "">
+
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <label>Your E-mail address</label>
+            <input type="email" >
+
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          <label>Today's date</label>
+            <input type="date" >
+
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <label>Current time</label>
+            <input type="time" >
+
+        <i class="fa fa-ambulance" aria-hidden="true"></i>
+        <label>Have you had Covid19 before?</label>
+
+          <h4 type="button" onmouseover="handleClick(this)" onmouseout="color(this)" >Yes</h4>
+          <h4 type="button" onmouseover="handleClick(this)" onmouseout="color(this)" >No</h4>
+          <script src="Covid.js">
+
+          </script>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    <button type="button" onmouseover="handleClick(this)" onmouseout="color(this)" class="submit">Create your QR code</button></h2>
+    <script src="Covid.js">
+
+        <script>
+
+        function activatePlacesSearch(){
+          var input = document.getElementById("addyfinder");
+          var autocomplete = new google.maps.places.Autocomplete(input);
+
+
+        }
+      </script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgLTEXEXTL9yXmCbsTYArlvCENh3YNrI8&libraries=places&callback=activatePlacesSearch"></script>
+
+
+
+      </div>
+
+    </body>
